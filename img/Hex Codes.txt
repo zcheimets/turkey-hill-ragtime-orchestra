@@ -1,0 +1,15 @@
+Logo: 
+    Pink/red: #ff5757
+    White: #ffffff
+    Maroon: #671119
+    Cream: #f6efed
+    Pink: #efa3ac
+    Red: #bd2223
+    Brown/black: #2d110f
+    Dark brown: #511411
+    Dark pink: #dc7b84
+    
+
+
+
+

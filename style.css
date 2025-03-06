@@ -1,0 +1,83 @@
+@font-face {
+    font-family: LinearGrotesk;
+    src: url(/LinearGrotesk-Bold.woff);
+    font-weight: bold;
+}
+
+.header {
+    font-family: LinearGrotesk;
+}
+
+.body {
+    font-family: LinearGrotesk;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.about img {
+    max-width: 100px;
+}
+
+/* Nav Bar */
+.navbar {
+    font-family: LinearGrotesk;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+
+
+/* Gallery Style */
+.grid {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, 1fr); */
+    gap: 10px;
+}
+
+.grid img {
+    max-height: 400px;
+
+}
+
+
+/* Contact Form Page*/
+
+
+input[type=text], textarea {
+    width: 100%;    
+    padding: 12px;
+    border: 1px solid #ccc;         
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;       /*Allows user to resize veritcally*/
+}
+
+input[type=submit] {
+    background-color: #ff5757;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form {
+    margin-top: 50px;
+}
