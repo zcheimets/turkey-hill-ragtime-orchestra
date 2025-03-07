@@ -2,7 +2,7 @@
 Welcome to Arlington's Turkey Hill Ragtime Orchestra's official website!
 
 ## Deployment
-This project is currently deployed using GitHub Pages. 
+This project is currently deployed using Vercel. 
 To view, navigate [here](https://turkey-hill-ragtime-orchestra.vercel.app/).
 
 ## License
