@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Turkey Hill Ragtime Orchestra</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon_io/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/contact.css">
 </head>
 
 <body>
@@ -14,14 +15,17 @@
         <nav class="navbar"> <!--Menu bar at top of page-->
             <h1>Turkey Hill Ragtime Orchestra</h1>
             <div class="menu">
-                <a href="index.html">Home</a>
-                <a href="contact.html">Contact</a>
+                <a href="/index.html">Home</a>
+                <a href="/src/contact.html">Contact</a>
+                <a href="/src/calendar.html">Calendar</a>
+                <a href="/src/about.html">About</a>
+                <a href="/src/support.html">Support</a>
             </div>
         </nav>
     </header>
     <div class="contact-form">
         <h2> Contact Us</h2>
-        <form action="contact.php">
+        <form action="contact.php"> <!-- TODO: have it send an email to her-->
             <label for="name">Your Name</label>
             <input type="text" id="name" name="name" placeholder="Your Name">
 
@@ -29,15 +33,13 @@
             <input type="text" id="email" name="emailaddr" placeholder="Your email...">
 
             <label for="subject">Subject</label>
-            <input type="text", id="subject" name="subject" placeholder="Write something..." style="height:200px"></input>
+            <input type="text", id="subject" name="subject" placeholder="Write something..."></input>
         
             <label for="message">Message</label>
             <textarea id="message" name="subject" style="height:200px"></textarea>
 
             <input type="submit" value="Submit">
         </form>
-
-
     </div>
 
 

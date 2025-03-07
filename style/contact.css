@@ -1,0 +1,29 @@
+/* Contact Form Page*/
+input[type=text], textarea {
+    font-family: LinearGrotesk;
+    width: 100%;    
+    padding: 12px;
+    border: 1px solid #ccc;         
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;       /*Allows user to resize veritcally*/
+}
+
+input[type=text]:hover, textarea:hover {        /*Hover over text boxes and it will change color*/
+    background-color: #f1f1f1;
+}
+
+input[type=submit] {
+    background-color: #ff5757;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {      /*Hover over submit button and it will change color*/
+    background-color: #f61515;
+}

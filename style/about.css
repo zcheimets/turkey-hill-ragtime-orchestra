@@ -1,0 +1,15 @@
+.container img {
+    max-height: 300px;
+    float: left;
+    margin: 13px;
+    border-radius: 5px;
+}
+
+.container h2 {
+    margin-bottom: 0px;
+}
+
+.container small {
+    margin-top: 0px;
+    margin-left: 5px;
+}

@@ -1,0 +1,94 @@
+@font-face {
+    font-family: LinearGrotesk;
+    src: url(/fonts/LinearGrotesk-Bold.woff);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: LinearGrotesk;
+    src: url(/fonts/LinearGrotesk-Light.woff);
+    font-weight: light;
+}
+
+@font-face {
+    font-family: LinearGrotesk;
+    src: url(/fonts/LinearGrotesk-Regular.woff);
+}
+
+html {
+    scroll-margin-top: 7rem; /*Keeps content from hiding behind navbar*/
+}
+
+body {
+    font-family: LinearGrotesk;
+    font-weight: light;
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.about img {
+    max-width: 160px;
+    float: left;
+    margin: 10px;
+    border-radius: 2px;
+}
+
+.about h2 {
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+/* TODO: why isn't the background reaching the edges of the screen */
+
+/* Nav Bar */
+header {
+    padding-top: 10px;
+    min-height: 70px;
+}
+
+.navbar {
+    font-family: LinearGrotesk;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fc8686;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: light;
+    color: #511411;
+}
+
+
+
+/* Gallery Style */
+.grid {
+    width: 95%;
+    display: grid;
+    /* justify-content: space-evenly; */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, 1fr); */
+    gap: 60px;
+}
+
+.grid img {
+    max-height: 170px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #333;
+}
+
+.grid img:hover {
+    box-shadow: 0 0 20px #333;
+}
+
