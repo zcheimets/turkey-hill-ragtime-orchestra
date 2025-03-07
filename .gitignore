@@ -1,0 +1,4 @@
+php_tests/
+composer.json
+composer.lock
+vendor/
