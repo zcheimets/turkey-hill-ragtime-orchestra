@@ -16,13 +16,15 @@
 }
 
 html {
-    scroll-margin-top: 7rem; /*Keeps content from hiding behind navbar*/
+    scroll-margin-top: 7rem;
+    /*Keeps content from hiding behind navbar*/
 }
 
 body {
     font-family: LinearGrotesk;
     font-weight: light;
-
+    margin: 0;          /*Menu bar reaches edge*/
+    padding: 0; 
 }
 
 .container {
@@ -43,12 +45,14 @@ body {
     margin-left: 10px;
 }
 
-/* TODO: why isn't the background reaching the edges of the screen */
 
 /* Nav Bar */
 header {
+    font-family: LinearGrotesk;
+    background: #fc8686;
+    color: #511411;
     padding-top: 10px;
-    min-height: 70px;
+    min-height: 100px;
 }
 
 .navbar {
@@ -62,11 +66,21 @@ header {
     background-color: #fc8686;
 }
 
-.navbar a {
+.navbar h1 {
+    margin-left: 40px;
+    font-size: xx-large;
+}
+
+.menu a {
     text-decoration: none;
     margin-right: 20px;
     font-weight: light;
+    font-size: larger;
     color: #511411;
+}
+
+.menu a:hover {
+    color: #8a2f28;
 }
 
 
@@ -91,4 +105,3 @@ header {
 .grid img:hover {
     box-shadow: 0 0 20px #333;
 }
-
