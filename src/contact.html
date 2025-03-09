@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon_io/favicon.ico">
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="/style/contact.css">
+    <script type="text/javascript" src="/scripts/contact.js"></script>
 </head>
 
 <body>
@@ -25,7 +26,7 @@
  
     <div class="contact-form">
         <h2> Contact Us</h2>
-        <form method="POST" id="form">
+        <form onsubmit="window.submitClick()" id="form">
             <!-- Public Access key, don't need to hide from pub -->
             <input type="hidden" name="access_key" value="3c8e471d-929e-4dd1-840e-988d8110d6b6">
             <!-- From name email will be from -->
@@ -41,7 +42,9 @@
             <input type="text" id="email" name="email" placeholder="Your email..." required>
 
             <label for="message">Message</label>
-            <textarea id="message" name="subject" style="height:200px" required></textarea>
+            <textarea id="temp"></textarea>
+
+            <input type="text" id="message" name="message" required>
 
             <!-- Honeypot Spam Protection -->
             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
@@ -49,12 +52,9 @@
             <!-- Custom Confirmation / Success Page 
             <input type="hidden" name="redirect" value="https://turkey-hill-ragtime-orchestra.vercel.app/contact_success.html"> -->
 
-
-            <button type="submit" name="submit" onClick="/scripts/contact.js">Submit</button>
-
+            <button type="submit" name="submit" id="submit" >Submit</button>
             <div id="result"></div>
         </form>
-        <script src="/scripts/contact.js"></script>
     </div>
 
 </body>

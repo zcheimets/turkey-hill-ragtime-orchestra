@@ -3,7 +3,13 @@
 /* Contact Form Page*/
 
 .contact-form {
-    margin: 50px;
+    margin: 400px;
+    margin-top: 50px;
+}
+
+.contact-form h2 {
+    justify-self: center;
+    font-size:xx-large;
 }
 
 
