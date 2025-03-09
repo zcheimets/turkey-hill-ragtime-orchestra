@@ -22,26 +22,41 @@
             </div>
         </nav>
     </header>
+ 
     <div class="contact-form">
         <h2> Contact Us</h2>
-        <form action="/test2.php"> <!-- TODO: have it send an email to her-->
+        <form method="POST" id="form">
+            <!-- Public Access key, don't need to hide from pub -->
+            <input type="hidden" name="access_key" value="3c8e471d-929e-4dd1-840e-988d8110d6b6">
+            <!-- From name email will be from -->
+            <input type="hidden" name="from_name" value="New Message for THRO">
+             <!-- <label for="subject">Subject</label> -->
+             <input type="hidden" id="subject" name="subject" value="New Submission"></input>
+
+            <!-- Contact form fields -->
             <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
 
             <label for="email">Email</label>
-            <input type="text" id="email" name="emailaddr" placeholder="Your email...">
+            <input type="text" id="email" name="email" placeholder="Your email..." required>
 
-            <label for="subject">Subject</label>
-            <input type="text", id="subject" name="subject" placeholder="Write something..."></input>
-        
             <label for="message">Message</label>
-            <textarea id="message" name="subject" style="height:200px"></textarea>
+            <textarea id="message" name="subject" style="height:200px" required></textarea>
 
-            <input type="submit" value="Submit">
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <!-- Custom Confirmation / Success Page 
+            <input type="hidden" name="redirect" value="https://turkey-hill-ragtime-orchestra.vercel.app/contact_success.html"> -->
+
+
+            <button type="submit" name="submit" onClick="/scripts/contact.js">Submit</button>
+
+            <div id="result"></div>
         </form>
+        <script src="/scripts/contact.js"></script>
     </div>
 
-
-
 </body>
+
 </html>

@@ -15,5 +15,12 @@ To view, navigate [here](https://turkey-hill-ragtime-orchestra.vercel.app/).
 - `index.html`: Home page HTML.
 - `index.js`: Script to automate gallery image addition to homepage.
 
+## Tools
+- `Vercel` is used to deploy the web app.
+- `web3forms` is used to forward contact form content to admin email. 
+- `CSS` to style site.
+- `HTML` to design site and pages.
+- `JavaScript` to automate gallery image additions. 
+
 ## License
 &copy; 2025 Zoe Cheimets. All rights reserved.

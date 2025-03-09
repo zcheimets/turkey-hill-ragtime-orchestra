@@ -2,10 +2,10 @@
   "name": "suzie-cartreine",
   "version": "1.0.0",
   "description": "## Not Yet Deployed",
-  "main": "index.js",
+  "main": "scripts/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node scripts/index.js"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,12 @@
+@import url(/style/style.css);  /*To get fonts*/
+
 /* Contact Form Page*/
+
+.contact-form {
+    margin: 50px;
+}
+
+
 input[type=text], textarea {
     font-family: LinearGrotesk;
     width: 100%;    
@@ -15,7 +23,7 @@ input[type=text]:hover, textarea:hover {        /*Hover over text boxes and it w
     background-color: #f1f1f1;
 }
 
-input[type=submit] {
+button {
     background-color: #ff5757;
     color: white;
     padding: 12px 20px;
@@ -24,6 +32,35 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {      /*Hover over submit button and it will change color*/
+button:hover {      /*Hover over submit button and it will change color*/
     background-color: #f61515;
+}
+
+/* Contact Form Success Page */
+.thank-you {
+    height: 200px;
+    width: 300px;
+    margin-top: 100px;
+    justify-self: center;
+    overflow: hidden;
+    justify-items: center;
+    border: 5px solid #ed7777;
+    border-radius: 10px;
+    background-color:#f9d5d5;
+    color: #532e2e;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.thank-you h1 {
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.thank-you h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.thank-you small {
+    margin-bottom: 50px;
 }
