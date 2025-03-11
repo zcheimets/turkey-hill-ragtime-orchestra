@@ -40,5 +40,6 @@ async function submitClick() {
             setTimeout(() => {
                 result.style.display = "none";
             }, 3000);
+            window.location.replace("www.google.com");      // TODO: testing with Google for now
         });
 }
