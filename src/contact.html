@@ -8,7 +8,8 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon_io/favicon.ico">
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="/style/contact.css">
-    <script type="text/javascript" src="/scripts/contact.js"></script>
+    <!-- <script type="text/javascript" src="/scripts/contact.js"></script> -->
+     <script type="text/javascript" src="/scripts/contact1.js"></script>
 </head>
 
 <body>
@@ -17,32 +18,34 @@
             <h1>Turkey Hill Ragtime Orchestra</h1>
             <div class="menu">
                 <a href="/index.html">Home</a>
-                <a href="/src/contact.html">Contact</a>
+                <a href="/src/contact.html">Contact Us</a>
                 <a href="/src/calendar.html">Calendar</a>
                 <a href="/src/about.html">About</a>
             </div>
         </nav>
     </header>
- 
+
     <div class="contact-form">
         <h2> Contact Us</h2>
-        <form onsubmit="window.submitClick()" id="form">
+        <!-- <form onsubmit="window.submitClick()" id="form"> -->
+        <form method="POST" id="form">
             <!-- Public Access key, don't need to hide from pub -->
             <input type="hidden" name="access_key" value="3c8e471d-929e-4dd1-840e-988d8110d6b6">
             <!-- From name email will be from -->
             <input type="hidden" name="from_name" value="New Message for THRO">
-             <!-- <label for="subject">Subject</label> -->
-             <input type="hidden" id="subject" name="subject" value="New Submission"></input>
+            <!-- <label for="subject">Subject</label> -->
+            <input type="hidden" id="subject" name="subject" value="New Submission"></input>
 
             <!-- Contact form fields -->
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
 
             <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Your email..." required>
+            <input type="text" id="email" name="email" required>
 
             <label for="message">Message</label>
-            <input type="text" id="message" name="message" required>
+            <!-- <input type="text" id="message" name="message" required> -->
+             <textarea name="message" required></textarea>
 
             <!-- Honeypot Spam Protection -->
             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
@@ -50,7 +53,7 @@
             <!-- Custom Confirmation / Success Page 
             <input type="hidden" name="redirect" value="https://turkey-hill-ragtime-orchestra.vercel.app/contact_success.html"> -->
 
-            <button type="submit" name="submit" id="submit" >Submit</button>
+            <button type="submit" name="submit" id="submit">Submit</button>
             <div id="result"></div>
         </form>
     </div>
