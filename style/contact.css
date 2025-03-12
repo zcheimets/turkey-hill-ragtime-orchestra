@@ -3,8 +3,11 @@
 /* Contact Form Page*/
 
 .contact-form {
-    margin: 400px;
+    margin: 35%;
     margin-top: 50px;
+    justify-self: center;
+    justify-items: center;
+    min-width: 300px;
 }
 
 .contact-form h2 {
