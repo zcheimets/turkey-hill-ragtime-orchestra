@@ -1,0 +1,16 @@
+.videos {
+    width: 90%;
+    justify-self: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.two_vids {
+    justify-content: center;
+    width: 100%;
+}
+
+iframe {
+    border-radius: 3px;
+    margin: 20px;
+}

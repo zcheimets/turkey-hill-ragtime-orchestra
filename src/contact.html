@@ -13,15 +13,7 @@
 
 <body>
     <header>
-        <nav class="navbar"> <!--Menu bar at top of page-->
-            <h1>Turkey Hill Ragtime Orchestra</h1>
-            <div class="menu">
-                <a href="/index.html">Home</a>
-                <a href="/src/contact.html">Contact Us</a>
-                <a href="/src/calendar.html">Calendar</a>
-                <a href="/src/about.html">About</a>
-            </div>
-        </nav>
+        <script id="replace_with_navbar" src="/scripts/nav.js"></script>
     </header>
 
     <div class="contact-form">
@@ -29,11 +21,10 @@
         <!-- <form onsubmit="window.submitClick()" id="form"> -->
         <form method="POST" id="form">
             <!-- Public Access key, don't need to hide from pub -->
-            <!-- <input type="hidden" name="access_key" value="3c8e471d-929e-4dd1-840e-988d8110d6b6"> -->
-            <input type="hidden" name="access_key" value="4ee42f6a-3e73-451c-8ada-fc28985dde9c">
+            <!-- <input type="hidden" name="access_key" value="3c8e471d-929e-4dd1-840e-988d8110d6b6"> --> <!--Mine-->
+            <input type="hidden" name="access_key" value="4ee42f6a-3e73-451c-8ada-fc28985dde9c"> <!--Suzie's-->
             <!-- From name email will be from -->
             <input type="hidden" name="from_name" value="New Message for THRO">
-            <!-- <label for="subject">Subject</label> -->
             <input type="hidden" id="subject" name="subject" value="New Submission"></input>
 
             <!-- Contact form fields -->
@@ -44,8 +35,7 @@
             <input type="text" id="email" name="email" required>
 
             <label for="message">Message</label>
-            <!-- <input type="text" id="message" name="message" required> -->
-             <textarea name="message" required></textarea>
+            <textarea name="message" required></textarea>
 
             <!-- Honeypot Spam Protection -->
             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
