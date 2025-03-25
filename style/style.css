@@ -27,6 +27,12 @@ body {
     padding: 0; 
 }
 
+footer {
+    background: #f4e5e5;
+    padding: 20px 0;
+    text-align: center;
+}
+
 .container {
     width: 80%;
     margin: auto;
