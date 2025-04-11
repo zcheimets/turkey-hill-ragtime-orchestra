@@ -1,0 +1,38 @@
+/* Footer */
+footer {
+    background: #f4f0f0;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+}
+
+.subscribe {        /*Form container*/
+    padding-left: 20%;
+    display: flex;
+}
+
+.subscribe * {      /*Elements inside of form*/
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid black;
+    max-height: 50px;
+    vertical-align: middle;
+}
+
+.subscribe input[type=button] {     /*Input button for subscribe*/
+    background-color: rgb(230, 216, 216);
+    max-height: 70%;
+}
+
+
+/* .follow {
+    grid-template-columns: 1fr 1fr 1fr;
+    display: inline-block;
+}
+
+.follow a {
+    display: inline;
+
+} */

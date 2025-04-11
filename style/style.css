@@ -15,6 +15,11 @@
     src: url(/fonts/LinearGrotesk-Regular.woff);
 }
 
+@font-face {
+    font-family: Breamcatcher;
+    src: url(/fonts/breamcatcher.regular.otf);
+}
+
 html {
     scroll-margin-top: 7rem;
     /*Keeps content from hiding behind navbar*/
@@ -25,12 +30,7 @@ body {
     font-weight: light;
     margin: 0;          /*Menu bar reaches edge*/
     padding: 0; 
-}
-
-footer {
-    background: #f4e5e5;
-    padding: 20px 0;
-    text-align: center;
+    height: 100%;
 }
 
 .container {
@@ -51,37 +51,49 @@ footer {
     margin-left: 10px;
 }
 
+.centerImage {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+    height: auto;
+}
+
+.shows h3 {
+    justify-self: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
 
 /* Nav Bar */
 header {
-    font-family: LinearGrotesk;
-    background: #fc8686;
     color: #511411;
-    padding-top: 10px;
-    min-height: 100px;
+    min-height: 80px;
 }
 
 .navbar {
-    font-family: LinearGrotesk;
+    font-family: Breamcatcher;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    top: 0;
     width: 100%;
-    background-color: #fc8686;
+    background-color: white;
+    max-height: 80px;
 }
 
 .navbar h1 {
     margin-left: 40px;
-    font-size: xx-large;
+    font-size: xxx-large;
 }
 
 .menu a {
     text-decoration: none;
     margin-right: 20px;
     font-weight: light;
-    font-size: larger;
+    font-size: x-large;
     color: #511411;
 }
 
@@ -111,3 +123,7 @@ header {
 .grid img:hover {
     box-shadow: 0 0 20px #333;
 }
+
+body > footer {
+    display: table-row;
+ }

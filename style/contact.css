@@ -1,22 +1,21 @@
 @import url(/style/style.css);  /*To get fonts*/
 
-/* Contact Form Page*/
-
+/* Contact Form */
 .contact-form {
     margin: 35%;
     margin-top: 50px;
-    justify-self: center;
-    justify-items: center;
+    margin-bottom: 10%;
     min-width: 300px;
 }
 
 .contact-form h2 {
     justify-self: center;
+    font-family: Breamcatcher;
     font-size:xx-large;
 }
 
 
-input[type=text], textarea {
+.contact-form input[type=text], textarea {
     font-family: LinearGrotesk;
     width: 100%;    
     padding: 12px;
@@ -28,22 +27,22 @@ input[type=text], textarea {
     resize: vertical;       /*Allows user to resize veritcally*/
 }
 
-input[type=text]:hover, textarea:hover {        /*Hover over text boxes and it will change color*/
+.contact-form input[type=text]:hover, textarea:hover {        /*Hover over text boxes and it will change color*/
     background-color: #f1f1f1;
 }
 
-button {
-    background-color: #ff5757;
+.contact-form button {
+    background-color: #8a2f28;
     color: white;
-    padding: 12px 20px;
-    border: none;
+    padding: 12px 20px;    border: none;
     border-radius: 4px;
-    cursor: pointer;
 }
 
-button:hover {      /*Hover over submit button and it will change color*/
-    background-color: #f61515;
+.contact-form button:hover {      /*Hover over submit button and it will change color*/
+    background-color: #511411;
 }
+
+
 
 /* Contact Form Success Page */
 .thank-you {
